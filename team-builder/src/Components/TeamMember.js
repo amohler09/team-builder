@@ -5,6 +5,7 @@ import team from '../data';
 
 
 const TeamMember = props => {
+    
     return(
         <div className='team-list'>
             {team.map(member => (

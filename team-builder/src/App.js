@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
-import team from './data';
 import TeamMember from './Components/TeamMember';
+import Form from './Components/Form';
 
 
 // 1. import useState and set up state property for team members
@@ -9,12 +9,13 @@ import TeamMember from './Components/TeamMember';
 function App() {
   //set up useState with an array of what details will change
   //add example text now but remove later
-  const [teamMember, setTeamMember] = useState(team)
+  const [members, setMembers] = useState({id: '', email: '', role: ''})
 
 
   return (
     <div className="App">
       <h2>Our Team</h2>
+      <Form />
       <TeamMember />      
     </div>
   );

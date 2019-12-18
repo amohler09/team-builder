@@ -1,24 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import team from './data';
+import TeamMember from './Components/TeamMember';
+
+
+// 1. import useState and set up state property for team members
 
 function App() {
+  //set up useState with an array of what details will change
+  //add example text now but remove later
+  const [teamMember, setTeamMember] = useState(team)
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h2>Our Team</h2>
+      <TeamMember />      
     </div>
   );
 }

@@ -4,7 +4,7 @@ import TeamMember from './Components/TeamMember';
 import Form from './Components/Form';
 
 
-// 1. import useState and set up state property for team members
+//import useState and set up state property for team members
 
 function App() {
   //set up useState with an array of what details will change

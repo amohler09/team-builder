@@ -1,14 +1,14 @@
 import React from 'react';
-import team from '../data';
 
 
 
+//there is no state here or any props being passed down
 
 const TeamMember = props => {
     
     return(
         <div className='team-list'>
-            {team.map(member => (
+            {props.members.map(member => (
                 <div className='member' key={member.id}>
                 <h3>Name: {member.name}</h3>
                 <p>Position: {member.role}</p>

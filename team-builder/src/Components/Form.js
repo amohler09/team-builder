@@ -43,6 +43,7 @@ const Form = props => {
             onChange={handleChanges}
             //handleChanges is the function created above
             value={teamMember.name}
+            name='name'
             //value is coming from the useState above
             /><br />
             <label htmlFor='email'>Email</label>
@@ -52,6 +53,7 @@ const Form = props => {
             placeholder='email'
             onChange={handleChanges}
             value={teamMember.email}
+            name='email'
             /><br />
             <label htmlFor='role'>Role</label>
             <input
@@ -60,6 +62,7 @@ const Form = props => {
             placeholder='role'
             onChange={handleChanges}
             value={teamMember.role}
+            name='role'
             /><br />
             <button type='submit'>Add Member!</button>
         </form>
